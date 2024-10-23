@@ -51,6 +51,10 @@ export default function List() {
   }, []);
   return (
     <>
+        <h2>List Pegawai</h2>
+        <NavLink to="/pegawai/create" className="btn btn-primary mb-3">
+            Create
+        </NavLink>
       <table className="table">
         <thead>
           <tr>
