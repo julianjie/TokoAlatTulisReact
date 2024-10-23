@@ -2,6 +2,7 @@ import React,{Suspense} from 'react'
 import { BrowserRouter as Router, Routes, Route,NavLink} from 'react-router-dom'
 
 const Home = React.lazy(() => import('./components/Home'))
+const PegawaiList = React.lazy(() => import('./components/Pegawai/List'))
 
 
 function App() {
@@ -39,7 +40,17 @@ function App() {
 
       <Suspense fallback={<div>Loading....</div>}>
         <Routes>
+          {/* Home */}
           <Route path= '/' element={<Home/>}/>
+
+          {/* Pegawai */}
+          <Route path= '/pegawai' element={<PegawaiList/>}/>
+
+          {/* Pelanggan */}
+
+          {/* Alat Tulis */}
+
+          {/* Transaksi */}
         </Routes>
       </Suspense>
     </Router>
