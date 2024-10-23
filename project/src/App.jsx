@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route,NavLink} from 'react-router-dom'
 
 const Home = React.lazy(() => import('./components/Home'))
 const PegawaiList = React.lazy(() => import('./components/Pegawai/List'))
+const PegawaiCreate = React.lazy(() => import('./components/Pegawai/Create'))
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
 
           {/* Pegawai */}
           <Route path= '/pegawai' element={<PegawaiList/>}/>
+          <Route path= '/pegawai/create' element={<PegawaiCreate/>}/>
 
           {/* Pelanggan */}
 
